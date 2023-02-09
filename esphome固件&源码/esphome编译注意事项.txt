@@ -1,0 +1,5 @@
+使用esphome编译时，需要将ld2410_uart.h头文件放到esphome根文件夹下
+如果需要多个模块，需要更改ld2410.yaml文件中的
+substitutions:
+    room_name: room
+把room_name修改为自己需要的名字（不能是中文），编译后在ha里面就是另外一个新设备了
