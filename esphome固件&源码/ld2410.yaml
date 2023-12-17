@@ -39,7 +39,7 @@ i2c:
   id: bus_a
 
 uart:
-  id: uart1
+  id: uart_ld2410
   tx_pin: TX
   rx_pin: RX
   baud_rate: 256000 # Change this according to your setting
@@ -53,7 +53,7 @@ uart:
       
 custom_component:
   - lambda: |-
-      return {new LD2410(id(uart1))};
+      return {new LD2410(id(uart_ld2410))};
     components:
       - id: ld2410
       
